@@ -1,0 +1,23 @@
+{
+  "id": "1788013",
+  "name": "vue-mimall",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "9242919",
+      "name": "购物车",
+      "font_class": "chat-gray",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "13363793",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}

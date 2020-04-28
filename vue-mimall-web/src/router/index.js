@@ -1,27 +1,50 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Home from "../views/home.vue";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
-  const routes = [
+const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: "/",
+    name: "Home",
+    component: Home,
+    redirect: "/index",
+    children: [
+      {
+        path: "/index",
+        name: "Index",
+        component: () => import("../views/index.vue"),
+      },
+      {
+        path: "/product/:id",
+        name: "Product",
+        component: () => import("../views/product.vue"),
+      },
+      {
+        path: "/detail/:id",
+        name: "Detail",
+        component: () => import("../views/detail.vue"),
+      },
+    ],
   },
-  // {
-  //   path: '/about',
-  //   name: 'About',
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  // }
-]
+  { path: "/cart", name: "Cart", component: () => import("../views/cart.vue") },
+  {
+    path: "/order",
+    name: "Order",
+    component: () => import("../views/order.vue"),
+    children: [
+      {
+        path: "/list",
+        name: "OrderList",
+        component: () => import("../views/orderList.vue"),
+      },
+    ],
+  },
+];
 
 const router = new VueRouter({
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
