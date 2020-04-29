@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 import http from './utils/http'
 import './assets/scss/reset.scss'
+import './assets/scss/base.scss'
 import './assets/iconfont/iconfont.css'
 
 Vue.prototype.$http = http
