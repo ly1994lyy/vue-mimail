@@ -6,6 +6,76 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "169418",
+      "name": "lu_充值",
+      "font_class": "chongzhi",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "799672",
+      "name": "话费充值",
+      "font_class": "huafeichongzhi",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "1744596",
+      "name": "右边",
+      "font_class": "youbian",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "3200692",
+      "name": "左右箭头",
+      "font_class": "youjiantou",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "7007355",
+      "name": "Fma",
+      "font_class": "Fma",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "9190659",
+      "name": "左右箭头",
+      "font_class": "zuoyoujiantou",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "9334328",
+      "name": "SIM Card",
+      "font_class": "SIMCard",
+      "unicode": "e799",
+      "unicode_decimal": 59289
+    },
+    {
+      "icon_id": "9599018",
+      "name": "钱",
+      "font_class": "qian",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "9805581",
+      "name": "时间",
+      "font_class": "shijian",
+      "unicode": "e6c9",
+      "unicode_decimal": 59081
+    },
+    {
+      "icon_id": "11259783",
+      "name": "大厦",
+      "font_class": "ziyuan",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
       "icon_id": "47453",
       "name": "微博",
       "font_class": "icon4",
