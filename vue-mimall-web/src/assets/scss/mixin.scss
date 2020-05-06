@@ -4,3 +4,8 @@
     justify-content: $hov;
     align-items: $col;
 }
+
+@mixin up1 {
+    transform: translateY(-1px);
+    box-shadow: 0 1px 5px #888888;
+}
