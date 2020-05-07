@@ -142,23 +142,17 @@
           </div>
         </div>
         <div class="ads-span3">
+          <!-- <a href v-for="(item,index) in adsList" :key="index">
+            <img :src="item" alt="">
+          </a> -->
           <a href>
-            <img
-              src="../assets/imgs/35a2239e10e392af73b6b7a737a039d6.jpg"
-              alt
-            />
+            <img src="../assets/imgs/35a2239e10e392af73b6b7a737a039d6.jpg" alt="">
           </a>
           <a href>
-            <img
-              src="../assets/imgs/35a2239e10e392af73b6b7a737a039d6.jpg"
-              alt
-            />
+            <img src="../assets/imgs/35a2239e10e392af73b6b7a737a039d6.jpg" alt="">
           </a>
           <a href>
-            <img
-              src="../assets/imgs/35a2239e10e392af73b6b7a737a039d6.jpg"
-              alt
-            />
+            <img src="../assets/imgs/35a2239e10e392af73b6b7a737a039d6.jpg" alt="">
           </a>
         </div>
       </div>
@@ -191,7 +185,7 @@
                     src="../assets/imgs/8729282b199b3ec51e31c1b6b15f3f93.webp"
                     alt=""
                   />
-                  <h3>小米10 青春版 5G</h3>
+                  <h3 class="title">小米10 青春版 5G</h3>
                   <p class="desc">50倍潜望式变焦 / 轻薄5G手机</p>
                   <p class="price">
                     <span class="num">2099</span>
@@ -206,7 +200,7 @@
                     src="../assets/imgs/8729282b199b3ec51e31c1b6b15f3f93.webp"
                     alt=""
                   />
-                  <h3>小米10 青春版 5G</h3>
+                  <h3 class="title">小米10 青春版 5G</h3>
                   <p class="desc">50倍潜望式变焦 / 轻薄5G手机</p>
                   <p class="price">
                     <span class="num">2099</span>
@@ -221,7 +215,7 @@
                     src="../assets/imgs/8729282b199b3ec51e31c1b6b15f3f93.webp"
                     alt=""
                   />
-                  <h3>小米10 青春版 5G</h3>
+                  <h3 class="title">小米10 青春版 5G</h3>
                   <p class="desc">50倍潜望式变焦 / 轻薄5G手机</p>
                   <p class="price">
                     <span class="num">2099</span>
@@ -236,7 +230,7 @@
                     src="../assets/imgs/8729282b199b3ec51e31c1b6b15f3f93.webp"
                     alt=""
                   />
-                  <h3>小米10 青春版 5G</h3>
+                  <h3 class="title">小米10 青春版 5G</h3>
                   <p class="desc">50倍潜望式变焦 / 轻薄5G手机</p>
                   <p class="price">
                     <span class="num">2099</span>
@@ -251,7 +245,7 @@
                     src="../assets/imgs/8729282b199b3ec51e31c1b6b15f3f93.webp"
                     alt=""
                   />
-                  <h3>小米10 青春版 5G</h3>
+                  <h3 class="title">小米10 青春版 5G</h3>
                   <p class="desc">50倍潜望式变焦 / 轻薄5G手机</p>
                   <p class="price">
                     <span class="num">2099</span>
@@ -266,7 +260,7 @@
                     src="../assets/imgs/8729282b199b3ec51e31c1b6b15f3f93.webp"
                     alt=""
                   />
-                  <h3>小米10 青春版 5G</h3>
+                  <h3 class="title">小米10 青春版 5G</h3>
                   <p class="desc">50倍潜望式变焦 / 轻薄5G手机</p>
                   <p class="price">
                     <span class="num">2099</span>
@@ -281,7 +275,7 @@
                     src="../assets/imgs/8729282b199b3ec51e31c1b6b15f3f93.webp"
                     alt=""
                   />
-                  <h3>小米10 青春版 5G</h3>
+                  <h3 class="title">小米10 青春版 5G</h3>
                   <p class="desc">50倍潜望式变焦 / 轻薄5G手机</p>
                   <p class="price">
                     <span class="num">2099</span>
@@ -296,7 +290,7 @@
                     src="../assets/imgs/8729282b199b3ec51e31c1b6b15f3f93.webp"
                     alt=""
                   />
-                  <h3>小米10 青春版 5G</h3>
+                  <h3 class="title">小米10 青春版 5G</h3>
                   <p class="desc">50倍潜望式变焦 / 轻薄5G手机</p>
                   <p class="price">
                     <span class="num">2099</span>
@@ -334,6 +328,11 @@ export default {
         autoplay: true,
         loop: true,
       },
+      adsList:[
+        "/public/35a2239e10e392af73b6b7a737a039d6.jpg",
+        "../assets/imgs/35a2239e10e392af73b6b7a737a039d6.jpg",
+        "../assets/imgs/35a2239e10e392af73b6b7a737a039d6.jpg"
+      ]
     };
   },
   components: {
@@ -439,10 +438,10 @@ export default {
             opacity: 0.7;
             display: block;
           }
-          &:hover{
+          &:hover {
             color: #fff;
             opacity: 1;
-            i{
+            i {
               opacity: 1;
             }
           }
@@ -540,10 +539,9 @@ export default {
               margin-top: 23px;
             }
             .title {
-              text-align: center;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              overflow: hidden;
+              color: #333;
+              font-weight: 400;
+              font-size: 14px;
             }
             .desc {
               margin: 0 10px 10px;
